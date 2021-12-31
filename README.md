@@ -10,6 +10,15 @@ viridis package.
 Additionally, using a single function, one can apply the theme and its
 corresponding palette to a plot.
 
+## Install
+
+Install the package via the official CRAN repository or via GitHub:
+
+``` r
+install.packages("devtools")
+devtools::install_github("ambitiousbellydancingsquirrel/ggtea")
+```
+
 ## Palettes
 
 There are three themes: matcha, apricot and butterfly.
