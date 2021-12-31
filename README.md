@@ -34,19 +34,22 @@ There are three themes: matcha, apricot and butterfly.
   library(ggtea)
 
   ggplot(iris, aes(Sepal.Width, Sepal.Length)) + 
-  geom_point(aes(col = Species)) +
+  geom_point(aes(col = Species)) + 
+  labs(title = "Iris Sepal Measurements",
+       subtitle = "Lengths and widths by species",
+       caption = "ggplot2 dataset") +
   apricot_d()
 ```
 
 ![](README_files/figure-gfm/pressure-1.png)<!-- -->
 
 ``` r
-  ggplot(diamonds, aes(price, carat)) + 
-  geom_point(aes(col = price)) + 
+  ggplot(diamonds, aes(carat, price)) + 
+  geom_point(aes(col = price), alpha = 0.25) + 
+  labs(title = "Diamond Prices by Carat Size",
+       subtitle = "How much does the carat size influence the price of a diamond?",
+       caption = "Tinkerbell likes diamonds (I presume)") + 
   butterfly_c()
 ```
 
 ![](README_files/figure-gfm/pressure-2.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
