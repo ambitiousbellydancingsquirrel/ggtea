@@ -16,7 +16,7 @@ theme_butterfly <- function(){
     plot.title = element_text(size = 20, color = "#96e6c2"),
     plot.subtitle = element_text(color = "#96e6c2", margin = unit(c(0, 2, 9, 2), "mm")),
     plot.title.position = "plot",
-    plot.caption = element_text(size = 12, color = "#96e6c2"),
+    plot.caption = element_text(color = "#96e6c2"),
 
     legend.background = element_blank(), #fill = "#271738"
     legend.position = "bottom",
