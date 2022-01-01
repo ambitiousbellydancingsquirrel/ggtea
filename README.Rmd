@@ -28,7 +28,7 @@ devtools::install_github("ambitiousbellydancingsquirrel/ggtea")
 
 ## Palettes
 
-There are three themes: matcha, apricot and butterfly.
+There are four themes: matcha, apricot, herbal and butterfly.
 
 ## Usage
 
@@ -49,6 +49,10 @@ There are three themes: matcha, apricot and butterfly.
   library(ggplot2)
   library(ggtea)
 
+  ggplot(mpg, aes(hwy, fill = drv)) + 
+  geom_violin() +
+  herbal_d()
+
   ggplot(iris, aes(Sepal.Width, Sepal.Length)) + 
   geom_point(aes(col = Species)) + 
   labs(title = "Iris Sepal Measurements",
@@ -61,7 +65,7 @@ There are three themes: matcha, apricot and butterfly.
   labs(title = "Diamond Prices by Carat Size",
        subtitle = "How much does the carat size influence the price of a diamond?",
        caption = "Tinkerbell likes diamonds (I presume)") + 
-  butterfly_c()
+  matcha_c()
                 
 ```
 
