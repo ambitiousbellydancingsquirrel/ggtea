@@ -9,7 +9,7 @@
 #' herbal_d()
 
 herbal_d <- function(){list(
-  theme_matcha(),
+  theme_herbal(),
   scale_color_manual(values = c("#89B0AE", "#8AD5AC",
                                 "#c25e8e", "#2fb9b7",
                                 "#dbbee3", "#a27985",
